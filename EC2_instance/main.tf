@@ -25,7 +25,3 @@ resource "aws_instance" "EC2_creation" {
         Name = "instances_configurations-${each.key}"
     }
 }
-
-module "ec2_instance" {
-  source = "git::https://github.com/your-org/Arrise_Terraform.git//EC2_instance"
-}
